@@ -1,0 +1,23 @@
+[project]
+name = "cogent"
+version = "0.1.0"
+description = "Cogent: small encoder models that answer typed multi-question decisions. Inference code."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "GPL-3.0-only"}
+authors = [{name = "Carlo Esposito", email = "carlo@aploi.de"}]
+dependencies = ["torch>=2.4", "transformers>=5.22", "safetensors", "numpy"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["cogent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]

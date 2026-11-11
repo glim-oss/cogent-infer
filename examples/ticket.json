@@ -1,0 +1,17 @@
+{
+  "state": "Ticket #4821, opened 3 days ago by a customer on the Team plan.\nSubject: Export to CSV fails for large projects.\nBody: Every export of a project with more than 10,000 rows stops at 99% and then shows 'Something went wrong'. Smaller projects export fine. We need the data for an audit on Friday. This is the second time I am writing about it.",
+  "questions": [
+    {"key": "queue", "type": "choice", "instructions": "Which team should handle this ticket?",
+     "options": ["billing", "engineering", "account_management", "spam"],
+     "descriptions": {"billing": "Invoices, payments, refunds and plan changes.",
+                      "engineering": "Bugs and failures in the product.",
+                      "account_management": "Contracts, renewals and relationship issues.",
+                      "spam": "Not a real support request."}},
+    {"key": "urgency", "type": "score", "instructions": "How urgent is this ticket?",
+     "options": ["low", "medium", "high"],
+     "descriptions": {"low": "Can wait a week or more.", "medium": "Should be handled within a few days.",
+                      "high": "Needs attention today."}},
+    {"key": "repeat_contact", "type": "noul", "instructions": "The customer has contacted support about this issue before.",
+     "options": ["false", "true"]}
+  ]
+}
